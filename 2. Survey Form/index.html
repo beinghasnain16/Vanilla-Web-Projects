@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 id='title'></h1>
+    <p id="description"></p>
+    <form id="survey-form">
+        <label for="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <label for="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <label for="number-label">Age</label>
+        <input type="text" id="number" min=5 max=10 placeholder="Enter your age">
+        
+        <label for="dropdown-label">Which option best describes your current role?</label>
+        <select id='dropdown' name='role'>
+        <option disabled selected value="">Select current role</option>
+        <option>Student</option>
+        <option>Part time job</option>
+        <option>Full time job</option>
+        <option>Unemployed</option>
+        </select>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>
+            <input name='j' value='definitely' type='radio' checked>
+            Definitely
+        </label>
+        <label>
+            <input name='j' value='Never' type='radio'>
+            Never
+        </label>
+
+        <p>What you want to be?</p>
+        <label>
+            <input name='aim' value='human' type='checkbox'>
+            Human
+        </label>
+        <label>
+            <input name='aim' value='engineer' type='checkbox'>
+            Engineer
+        </label>
+
+        <p>Anything more</p>
+        <textarea id='comment' placeholder="Enter here"></textarea>
+
+        <button type='submit' id='submit'>Submit Form</button>
+    </form>
     
 </body>
 </html>
